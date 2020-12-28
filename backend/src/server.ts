@@ -1,14 +1,12 @@
-import express from "express";
-
-import "./database/connection";
+import express, { request, response } from 'express';
+import './database/connection';
+import routes from './routes';
 
 const app = express();
+
 app.use(express.json());
 
-/*
-Rota = conjunto / Recurso = usuário
-O primeiro parametro é a rota.
-O segundo é a função que diz o que fazer.
-*/
+// Devem vir depois do express json
+app.use(routes);
 
 app.listen(3333);
