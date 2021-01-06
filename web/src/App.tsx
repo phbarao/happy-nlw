@@ -1,13 +1,10 @@
-import React from 'react';
-import * as dotenv from 'dotenv';
+import React from "react";
 
-import './styles/global.css';
-import Routes from './routes';
+import Routes from "./routes";
 
-dotenv.config();
+import "./styles/global.css";
+import "leaflet/dist/leaflet.css";
 
-function App() {
+export default function App() {
   return <Routes />;
 }
-
-export default App;
