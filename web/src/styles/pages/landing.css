@@ -22,7 +22,7 @@
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-between;
-  background: url('../../images/criancas.svg') no-repeat 400px 5px;
+  background: url("../../images/criancas.svg") no-repeat 400px 5px;
 }
 
 #page-landing .content-wrapper main {
